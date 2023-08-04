@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        body{
+            background-color:rgb(122, 255, 128);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        form{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px yellow;
+        }
+        .form-controls{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-controls label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-controls select, .form-controls textarea , .form-controls input{
+           border: 1px solid black;
+           border-radius: 3px;
+           font-family: inherit;
+           padding: 10px;
+           width: 95%;
+           display: block;
+        }
+        .form-controls input[type="radio"],   .form-controls input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            background-color: rgb(122, 255, 128);
+            border: 2px solid black;
+            border-radius: 3px;
+            width: 100%;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+  <h1>Work status survey form</h1>
+  <form>
+    <div class="form-controls">
+     <label for="name" id="lable-text">
+        Name
+     </label>
+     <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-controls">
+       <label for="email" id="lable-email">
+        Email
+       </label>
+    <input type="email"  id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-controls">
+        <label for="age" id="lable-age">Age </label>
+        <input type="number" id="age" placeholder="Enter your age">
+    </div>
+    <div class="form-controls">
+        <label for="dateofbirth">Date of birth</label>
+        <input type="date" name="dateofbirth" id="dateofbirth">
+    </div>
+    <div class="form-controls">
+        <label for="role" id="lable-role">which roles discribes you ?</label>
+        <select name="role" id="role">
+            <option value="student">student</option>
+            <option value="intern">intern</option>
+        </select>
+
+    </div>
+    <div class="form-controls">
+        <label >Languages and frameworks you known ?</label>
+        <label for="inp1">
+            <input type="checkbox" name="inp">C++ </input>
+        </label>
+        <label for="inp2">
+            <input type="checkbox" name="inp">Java </input>
+        </label>
+        <label for="inp3">
+            <input type="checkbox" name="inp">python </input>
+        </label>
+        <label for="inp4">
+            <input type="checkbox" name="inp">Html </input>
+        </label>
+        <label for="inp5">
+            <input type="checkbox" name="inp">Css </input>
+        </label>
+        <label for="inp6">
+            <input type="checkbox" name="inp">Bootstrap </input>
+        </label>
+    </div>
+    <div class="form-controls">
+        <label for="comments">comments</label>
+        <textarea name="comments" id="comments" placeholder="Enter your comments"></textarea>
+    </div>
+    <button type="submit" value="submit">Submit</button>
+  </form>
+</body>
+</html>
